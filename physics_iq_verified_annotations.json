@@ -1,0 +1,1541 @@
+{
+  "benchmark": "Physics-IQ Verified",
+  "annotations": {
+    "0001_perspective-left_trimmed-ball-and-block-fall": {
+      "status": "FAIL",
+      "patterns": [
+        "A07"
+      ],
+      "rationale": "背景颜色异常。"
+    },
+    "0002_perspective-center_trimmed-ball-and-block-fall": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0003_perspective-right_trimmed-ball-and-block-fall": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A10"
+      ],
+      "rationale": "不符合描述。"
+    },
+    "0004_perspective-left_trimmed-ball-behind-rotating-paper": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A06",
+        "A11"
+      ],
+      "rationale": "卡纸在动作中消失，球也没有被稳定放到持续旋转的卡纸后方。"
+    },
+    "0005_perspective-center_trimmed-ball-behind-rotating-paper": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A04",
+        "A11"
+      ],
+      "rationale": "卡纸没有完成顺时针旋转；球停在卡纸上／旁，而非清晰地置于其后。"
+    },
+    "0006_perspective-right_trimmed-ball-behind-rotating-paper": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A03",
+        "A04",
+        "A11"
+      ],
+      "rationale": "卡纸基本不旋转，球与卡纸的前后关系也没有按 prompt 建立。"
+    },
+    "0007_perspective-left_trimmed-ball-hits-duck": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A11"
+      ],
+      "rationale": "球未从管中形成正确直线路径，也没有撞到鸭子。"
+    },
+    "0008_perspective-center_trimmed-ball-hits-duck": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06"
+      ],
+      "rationale": "球偏离鸭子并滚出画面，关键碰撞缺失。球消失。"
+    },
+    "0009_perspective-right_trimmed-ball-hits-duck": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06",
+        "A11"
+      ],
+      "rationale": "小球缺失，球没有命中鸭子并在运动中消失。没有按照 prompt 执行。"
+    },
+    "0010_perspective-left_trimmed-ball-hits-nothing": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A11"
+      ],
+      "rationale": "没有按照 prompt 执行。"
+    },
+    "0011_perspective-center_trimmed-ball-hits-nothing": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A03",
+        "A11"
+      ],
+      "rationale": "初始状态异常。"
+    },
+    "0012_perspective-right_trimmed-ball-hits-nothing": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A11"
+      ],
+      "rationale": "轨迹不太对。"
+    },
+    "0013_perspective-left_trimmed-ball-in-basket": {
+      "status": "FAIL",
+      "patterns": [
+        "A07"
+      ],
+      "rationale": "背景异常。"
+    },
+    "0014_perspective-center_trimmed-ball-in-basket": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A07",
+        "A11"
+      ],
+      "rationale": "不符合常识。"
+    },
+    "0015_perspective-right_trimmed-ball-in-basket": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A11"
+      ],
+      "rationale": "违背常识。"
+    },
+    "0016_perspective-left_trimmed-ball-in-sand": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0017_perspective-center_trimmed-ball-in-sand": {
+      "status": "FAIL",
+      "patterns": [
+        "A06",
+        "A11"
+      ],
+      "rationale": "球进入沙堆后无可见沙体响应并完全消失，像被删除而非被沙粒承托／部分掩埋。"
+    },
+    "0018_perspective-right_trimmed-ball-in-sand": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A07"
+      ],
+      "rationale": "背景异常。"
+    },
+    "0019_perspective-left_trimmed-ball-ramp": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A03"
+      ],
+      "rationale": "球滚向错误方向／错误目标，没有沿斜坡完成指定路径。"
+    },
+    "0020_perspective-center_trimmed-ball-ramp": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06",
+        "A11"
+      ],
+      "rationale": "球离开管口后在到达斜坡前滚出／消失。"
+    },
+    "0021_perspective-right_trimmed-ball-ramp": {
+      "status": "FAIL",
+      "patterns": [
+        "A06",
+        "A11"
+      ],
+      "rationale": "实体消失，不符合物理定律。"
+    },
+    "0022_perspective-left_trimmed-ball-rolls-off": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A04",
+        "A06"
+      ],
+      "rationale": "错误轨迹。"
+    },
+    "0023_perspective-center_trimmed-ball-rolls-off": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A02"
+      ],
+      "rationale": "错误轨迹。"
+    },
+    "0024_perspective-right_trimmed-ball-rolls-off": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A02"
+      ],
+      "rationale": "球运动方向与 prompt 相反，管口—球的起始关系不成立。"
+    },
+    "0025_perspective-left_trimmed-ball-rolls-on-glass": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A04"
+      ],
+      "rationale": "球和玻璃板近乎静止，未完成滚动。"
+    },
+    "0026_perspective-center_trimmed-ball-rolls-on-glass": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A04"
+      ],
+      "rationale": "球在首帧已处于玻璃板上，且未清晰呈现从木桌滚上玻璃的路径。"
+    },
+    "0027_perspective-right_trimmed-ball-rolls-on-glass": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "相对合理。"
+    },
+    "0028_perspective-left_trimmed-ball-train": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A05",
+        "A06",
+        "A11"
+      ],
+      "rationale": "实体消失，违背物理规律。"
+    },
+    "0029_perspective-center_trimmed-ball-train": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A05",
+        "A06",
+        "A11"
+      ],
+      "rationale": "灰球在碰到棕球前消失，碰撞与动量传递未发生。"
+    },
+    "0030_perspective-right_trimmed-ball-train": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A05",
+        "A06",
+        "A11"
+      ],
+      "rationale": "灰球越过／离开目标区域，棕球保持不动，指定碰撞未发生。实体消失。"
+    },
+    "0031_perspective-left_trimmed-balls-collide": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06",
+        "A11"
+      ],
+      "rationale": "两球没有在桌面正确相撞，而是偏离并消失。"
+    },
+    "0032_perspective-center_trimmed-balls-collide": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06",
+        "A11"
+      ],
+      "rationale": "球的路径未形成相向碰撞，随后离开画面。"
+    },
+    "0033_perspective-right_trimmed-balls-collide": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06",
+        "A11"
+      ],
+      "rationale": "两球没有相撞，其中一球进入错误管口／离开场景。"
+    },
+    "0034_perspective-left_trimmed-block-domino": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A05",
+        "A06",
+        "A11"
+      ],
+      "rationale": "棍子未完成旋转，紫色积木在过程中消失。"
+    },
+    "0035_perspective-center_trimmed-block-domino": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A06",
+        "A11"
+      ],
+      "rationale": "棍子接触首块积木，但多米诺连锁没有继续。实体消失。"
+    },
+    "0036_perspective-right_trimmed-block-domino": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A05",
+        "A11"
+      ],
+      "rationale": "首帧静止。"
+    },
+    "0037_perspective-left_trimmed-blow-balloon": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "气球体积基本不变，没有被充气。"
+    },
+    "0038_perspective-center_trimmed-blow-balloon": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "气球没有明显膨胀。"
+    },
+    "0039_perspective-right_trimmed-blow-balloon": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "气球保持首帧状态，充气动作未发生。"
+    },
+    "0040_perspective-left_trimmed-cut-orange": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A10",
+        "A11"
+      ],
+      "rationale": "刀具接触橘子后的切割与分离过程不连贯，并出现不合理的额外切片／状态变化。"
+    },
+    "0041_perspective-center_trimmed-cut-orange": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A03"
+      ],
+      "rationale": "刀接触橙子但没有切开，动作停留在接触层面。"
+    },
+    "0042_perspective-right_trimmed-cut-orange": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A05"
+      ],
+      "rationale": "与 prompt 不一致。"
+    },
+    "0043_perspective-left_trimmed-cut-paper": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A11"
+      ],
+      "rationale": "违背 prompt，不合理状态更新。"
+    },
+    "0044_perspective-center_trimmed-cut-paper": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0045_perspective-right_trimmed-cut-paper": {
+      "status": "FAIL",
+      "patterns": [
+        "A05"
+      ],
+      "rationale": "纸被拉平但没有撕裂。"
+    },
+    "0046_perspective-left_trimmed-domino-in-juice": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0047_perspective-center_trimmed-domino-in-juice": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0048_perspective-right_trimmed-domino-in-juice": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0049_perspective-left_trimmed-dominos-with-space": {
+      "status": "FAIL",
+      "patterns": [
+        "A09",
+        "A11"
+      ],
+      "rationale": "积木一度倒下后又自行站回，结果发生回滚。"
+    },
+    "0050_perspective-center_trimmed-dominos-with-space": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A06"
+      ],
+      "rationale": "多块多米诺在倒下过程中无故消失。"
+    },
+    "0051_perspective-right_trimmed-dominos-with-space": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A05"
+      ],
+      "rationale": "棍子没有有效旋转，首块及后续多米诺均未倒下。"
+    },
+    "0052_perspective-left_trimmed-double-cradle": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A02",
+        "A05",
+        "A11"
+      ],
+      "rationale": "抓取器没有保持 prompt 所述的双球初态，也没有完成双球释放。没有后续的交互。"
+    },
+    "0053_perspective-center_trimmed-double-cradle": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A05",
+        "A11"
+      ],
+      "rationale": "未按照预期执行。"
+    },
+    "0054_perspective-right_trimmed-double-cradle": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06"
+      ],
+      "rationale": "未按照预期执行。"
+    },
+    "0055_perspective-left_trimmed-duck-and-dominos": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A04",
+        "A05"
+      ],
+      "rationale": "鸭子而非棍子参与推动，多米诺连锁与 prompt 的因果链不符。"
+    },
+    "0056_perspective-center_trimmed-duck-and-dominos": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A04",
+        "A05"
+      ],
+      "rationale": "动作主体和接触关系错误，未形成指定的棍子—多米诺级联。"
+    },
+    "0057_perspective-right_trimmed-duck-and-dominos": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A04",
+        "A05"
+      ],
+      "rationale": "鸭子替代棍子成为运动主体，连锁反应缺失。"
+    },
+    "0058_perspective-left_trimmed-duck-falls-in-box": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0059_perspective-center_trimmed-duck-falls-in-box": {
+      "status": "FAIL",
+      "patterns": [
+        "A06"
+      ],
+      "rationale": "鸭子落入箱体后直接消失，落入后的实体连续性未保持。"
+    },
+    "0060_perspective-right_trimmed-duck-falls-in-box": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A04",
+        "A10"
+      ],
+      "rationale": "鸭子突然出现在箱口／顶部，缺少从抓取器释放到落入箱内的连续轨迹。"
+    },
+    "0061_perspective-left_trimmed-duck-static": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0062_perspective-center_trimmed-duck-static": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0063_perspective-right_trimmed-duck-static": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0064_perspective-left_trimmed-fill-glass-red-drink": {
+      "status": "FAIL",
+      "patterns": [
+        "A06",
+        "A11"
+      ],
+      "rationale": "饮料机在完成倒液后无故从场景中消失。"
+    },
+    "0065_perspective-center_trimmed-fill-glass-red-drink": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违反物理定律。"
+    },
+    "0066_perspective-right_trimmed-fill-glass-red-drink": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违反物理定律。"
+    },
+    "0067_perspective-left_trimmed-glass-stays-same": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0068_perspective-center_trimmed-glass-stays-same": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违反物理定律。"
+    },
+    "0069_perspective-right_trimmed-glass-stays-same": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0070_perspective-left_trimmed-juice-in-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违背 prompt。"
+    },
+    "0071_perspective-center_trimmed-juice-in-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违背 prompt。"
+    },
+    "0072_perspective-right_trimmed-juice-in-water": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0073_perspective-left_trimmed-light-on-block": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0074_perspective-center_trimmed-light-on-block": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A11"
+      ],
+      "rationale": "积木与阴影基本静止，没有完成横向移动。"
+    },
+    "0075_perspective-right_trimmed-light-on-block": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0076_perspective-left_trimmed-light-on-mug": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0077_perspective-center_trimmed-light-on-mug": {
+      "status": "FAIL",
+      "patterns": [
+        "A10",
+        "A11"
+      ],
+      "rationale": "杯子旋转时液体无提示地大量流出，出现了改变任务语义的附加事件。"
+    },
+    "0078_perspective-right_trimmed-light-on-mug": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0079_perspective-left_trimmed-light-on-mug-block": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0080_perspective-center_trimmed-light-on-mug-block": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0081_perspective-right_trimmed-light-on-mug-block": {
+      "status": "FAIL",
+      "patterns": [
+        "A06",
+        "A07",
+        "A08"
+      ],
+      "rationale": "蓝色积木消失／重现，黄色杯子发生复制与分裂式畸变。违背物理定律。"
+    },
+    "0082_perspective-left_trimmed-light-on-statue": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A12",
+        "A11"
+      ],
+      "rationale": "雕像与影子的相对变化不符合指定移动，画面变化主要表现为视角／整体偏移。违背物理定律。"
+    },
+    "0083_perspective-center_trimmed-light-on-statue": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "雕像及其影子近乎静止。违背物理定律。"
+    },
+    "0084_perspective-right_trimmed-light-on-statue": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "没有观察到雕像按 prompt 移动。"
+    },
+    "0085_perspective-left_trimmed-liquid-on-duck": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A08",
+        "A06"
+      ],
+      "rationale": "液体颜色／身份漂移，分配器外形变化并在时序中失去稳定连续性。违背物理定律。"
+    },
+    "0086_perspective-center_trimmed-liquid-on-duck": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0087_perspective-right_trimmed-liquid-on-duck": {
+      "status": "FAIL",
+      "patterns": [
+        "A09",
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0088_perspective-left_trimmed-liquid-overfill": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06",
+        "A10",
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0089_perspective-center_trimmed-liquid-overfill": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06",
+        "A10",
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0090_perspective-right_trimmed-liquid-overfill": {
+      "status": "FAIL",
+      "patterns": [
+        "A06"
+      ],
+      "rationale": "杯中液体增加后，分配器从场景中无故消失。违背物理定律。"
+    },
+    "0091_perspective-left_trimmed-lit-candle": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0092_perspective-center_trimmed-lit-candle": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0093_perspective-right_trimmed-lit-candle": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0094_perspective-left_trimmed-magnet-domino": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "多米诺与平台没有完成旋转。"
+    },
+    "0095_perspective-center_trimmed-magnet-domino": {
+      "status": "FAIL",
+      "patterns": [
+        "A04"
+      ],
+      "rationale": "不符合 prompt。"
+    },
+    "0096_perspective-right_trimmed-magnet-domino": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A07"
+      ],
+      "rationale": "实体身份与状态维持异常。"
+    },
+    "0097_perspective-left_trimmed-magnet-transparent-peakaboo": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A03"
+      ],
+      "rationale": "透明罩只移动到上方，没有完整下降并覆盖磁体。"
+    },
+    "0098_perspective-center_trimmed-magnet-transparent-peakaboo": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A11"
+      ],
+      "rationale": "违反常识。"
+    },
+    "0099_perspective-right_trimmed-magnet-transparent-peakaboo": {
+      "status": "FAIL",
+      "patterns": [
+        "A04"
+      ],
+      "rationale": "空间关系不合理。"
+    },
+    "0100_perspective-left_trimmed-magnet-wrench": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "扳手和平台没有旋转。"
+    },
+    "0101_perspective-center_trimmed-magnet-wrench": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "扳手基本保持不动，目标旋转缺失。"
+    },
+    "0102_perspective-right_trimmed-magnet-wrench": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A10"
+      ],
+      "rationale": "关键金属物体身份与输入不一致，且未完成指定旋转。"
+    },
+    "0103_perspective-left_trimmed-marble-run-x": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A11"
+      ],
+      "rationale": "弹珠没有稳定沿连续斜坡下行，运动路径与重力约束不一致。"
+    },
+    "0104_perspective-center_trimmed-marble-run-x": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A04",
+        "A11"
+      ],
+      "rationale": "弹珠只完成局部移动并停在斜坡之间，动作不完整。违背物理法则。"
+    },
+    "0105_perspective-right_trimmed-marble-run-x": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A04"
+      ],
+      "rationale": "弹珠与斜坡基本静止。违背物理法则。"
+    },
+    "0106_perspective-left_trimmed-marble-run-y": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A09"
+      ],
+      "rationale": "状态维持错误。"
+    },
+    "0107_perspective-center_trimmed-marble-run-y": {
+      "status": "FAIL",
+      "patterns": [
+        "A07"
+      ],
+      "rationale": "实体维持异常。"
+    },
+    "0108_perspective-right_trimmed-marble-run-y": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A11"
+      ],
+      "rationale": "运动轨迹错误，动作执行异常。"
+    },
+    "0109_perspective-left_trimmed-match": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A11"
+      ],
+      "rationale": "燃烧火柴被放入水中后火焰仍持续，熄灭响应缺失。"
+    },
+    "0110_perspective-center_trimmed-match": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A04",
+        "A11"
+      ],
+      "rationale": "火柴被向上移走而不是向下放入水中。"
+    },
+    "0111_perspective-right_trimmed-match": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A04"
+      ],
+      "rationale": "动作方向与对象关系错误，火柴未被降低到水中。"
+    },
+    "0112_perspective-left_trimmed-match-blows-balloon": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A05"
+      ],
+      "rationale": "火柴接触气球但气球没有产生应有反应。"
+    },
+    "0113_perspective-center_trimmed-match-blows-balloon": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A02"
+      ],
+      "rationale": "火柴未点燃／未旋转，气球也没有发生变化。"
+    },
+    "0114_perspective-right_trimmed-match-blows-balloon": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A02"
+      ],
+      "rationale": "关键火焰初态缺失，旋转与后续响应均未发生。"
+    },
+    "0115_perspective-left_trimmed-mirror-ball-fall": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A06"
+      ],
+      "rationale": "悬挂球没有被明显降低，且镜像／实体在过程中消失。"
+    },
+    "0116_perspective-center_trimmed-mirror-ball-fall": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "镜面球未被明显降低到指定位置。"
+    },
+    "0117_perspective-right_trimmed-mirror-ball-fall": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A11"
+      ],
+      "rationale": "画面维持错误，未按照动作执行。"
+    },
+    "0118_perspective-left_trimmed-mirror-ball-rotate": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A04"
+      ],
+      "rationale": "动作执行错误。"
+    },
+    "0119_perspective-center_trimmed-mirror-ball-rotate": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A04"
+      ],
+      "rationale": "动作执行错误。"
+    },
+    "0120_perspective-right_trimmed-mirror-ball-rotate": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "细节违反物理定律。"
+    },
+    "0121_perspective-left_trimmed-mirror-teapot-rotate": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "茶壶没有完成旋转。"
+    },
+    "0122_perspective-center_trimmed-mirror-teapot-rotate": {
+      "status": "FAIL",
+      "patterns": [
+        "A04"
+      ],
+      "rationale": "茶壶旋转方向与 prompt 的顺时针要求相反。实体维持。"
+    },
+    "0123_perspective-right_trimmed-mirror-teapot-rotate": {
+      "status": "FAIL",
+      "patterns": [
+        "A07"
+      ],
+      "rationale": "实体维持。"
+    },
+    "0124_perspective-left_trimmed-mug-breaks": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A09",
+        "A11"
+      ],
+      "rationale": "过程异常。"
+    },
+    "0125_perspective-center_trimmed-mug-breaks": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A10",
+        "A11"
+      ],
+      "rationale": "过程异常。"
+    },
+    "0126_perspective-right_trimmed-mug-breaks": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A10",
+        "A11"
+      ],
+      "rationale": "执行过程异常。"
+    },
+    "0127_perspective-left_trimmed-napkin-soak": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A11"
+      ],
+      "rationale": "纸巾释放后悬停，没有落入液体并发生正常重力／吸液响应。"
+    },
+    "0128_perspective-center_trimmed-napkin-soak": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0129_perspective-right_trimmed-napkin-soak": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A11"
+      ],
+      "rationale": "违背物理定律。"
+    },
+    "0130_perspective-left_trimmed-paint-on-glass": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "刷子和玻璃基本静止，没有涂刷动作。"
+    },
+    "0131_perspective-center_trimmed-paint-on-glass": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A11"
+      ],
+      "rationale": "事件响应错误。"
+    },
+    "0132_perspective-right_trimmed-paint-on-glass": {
+      "status": "FAIL",
+      "patterns": [
+        "A01"
+      ],
+      "rationale": "刷子没有按 prompt 旋转／移动。"
+    },
+    "0133_perspective-left_trimmed-paper-fall-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A07"
+      ],
+      "rationale": "细节表现不符合实际。"
+    },
+    "0134_perspective-center_trimmed-paper-fall-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A11"
+      ],
+      "rationale": "白纸接触水后突然整体变黑，颜色与材料响应不合理。"
+    },
+    "0135_perspective-right_trimmed-paper-fall-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A07"
+      ],
+      "rationale": "细节表现不符实际。"
+    },
+    "0136_perspective-left_trimmed-paper-in-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A11"
+      ],
+      "rationale": "缺乏因果过程。"
+    },
+    "0137_perspective-center_trimmed-paper-in-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A05"
+      ],
+      "rationale": "因果状态不合理。"
+    },
+    "0138_perspective-right_trimmed-paper-in-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A05"
+      ],
+      "rationale": "因果不合理。"
+    },
+    "0139_perspective-left_trimmed-paper-smoke": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A09"
+      ],
+      "rationale": "因果不合理。"
+    },
+    "0140_perspective-center_trimmed-paper-smoke": {
+      "status": "FAIL",
+      "patterns": [
+        "A09"
+      ],
+      "rationale": "状态变化不合理。"
+    },
+    "0141_perspective-right_trimmed-paper-smoke": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A09"
+      ],
+      "rationale": "状态变化不合理。"
+    },
+    "0142_perspective-left_trimmed-potato-in-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A06",
+        "A07",
+        "A09",
+        "A11"
+      ],
+      "rationale": "违背物理法则，实体状态异常。"
+    },
+    "0143_perspective-center_trimmed-potato-in-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A11"
+      ],
+      "rationale": "违背物理法则，状态不合理。"
+    },
+    "0144_perspective-right_trimmed-potato-in-water": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A07",
+        "A11"
+      ],
+      "rationale": "实体数量异常，状态不合理。"
+    },
+    "0145_perspective-left_trimmed-roll-behind-box": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A03",
+        "A11"
+      ],
+      "rationale": "动作触发错误。"
+    },
+    "0146_perspective-center_trimmed-roll-behind-box": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A06",
+        "A07"
+      ],
+      "rationale": "黑管在输出中消失，球—管—遮挡物的起始结构未能保持。不合理过程。"
+    },
+    "0147_perspective-right_trimmed-roll-behind-box": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A06",
+        "A11"
+      ],
+      "rationale": "黑管缺失，球进入遮挡区的运动缺少完整可追踪初态。不合理过程。"
+    },
+    "0148_perspective-left_trimmed-roll-front-box": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A01"
+      ],
+      "rationale": "球在白色遮挡物前提前停下，没有横穿整张桌面。"
+    },
+    "0149_perspective-center_trimmed-roll-front-box": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0150_perspective-right_trimmed-roll-front-box": {
+      "status": "FAIL",
+      "patterns": [
+        "A04"
+      ],
+      "rationale": "运动轨迹异常。"
+    },
+    "0151_perspective-left_trimmed-roll-in-box": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0152_perspective-center_trimmed-roll-in-box": {
+      "status": "FAIL",
+      "patterns": [
+        "A04"
+      ],
+      "rationale": "运动轨迹异常。"
+    },
+    "0153_perspective-right_trimmed-roll-in-box": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0154_perspective-left_trimmed-rolling-reflection": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A11"
+      ],
+      "rationale": "颜色维持异常，过程不合理。"
+    },
+    "0155_perspective-center_trimmed-rolling-reflection": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06",
+        "A11"
+      ],
+      "rationale": "球滚出桌面并消失，没有命中壶铃。"
+    },
+    "0156_perspective-right_trimmed-rolling-reflection": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A06"
+      ],
+      "rationale": "实体消失，未按照 prompt 执行。"
+    },
+    "0157_perspective-left_trimmed-silk-cover": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A09"
+      ],
+      "rationale": "丝绸一度盖住茶壶但随后掀起，最终覆盖状态未保持。"
+    },
+    "0158_perspective-center_trimmed-silk-cover": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A09"
+      ],
+      "rationale": "丝绸一度盖住茶壶但随后掀起，最终覆盖状态未保持。"
+    },
+    "0159_perspective-right_trimmed-silk-cover": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A02",
+        "A06",
+        "A07"
+      ],
+      "rationale": "丝绸在输出中缺失，覆盖动作没有发生。"
+    },
+    "0160_perspective-left_trimmed-single-cradle": {
+      "status": "FAIL",
+      "patterns": [
+        "A09",
+        "A10",
+        "A11"
+      ],
+      "rationale": "不符合物理法则。"
+    },
+    "0161_perspective-center_trimmed-single-cradle": {
+      "status": "FAIL",
+      "patterns": [
+        "A07"
+      ],
+      "rationale": "实体数量异常。"
+    },
+    "0162_perspective-right_trimmed-single-cradle": {
+      "status": "FAIL",
+      "patterns": [
+        "A06",
+        "A07"
+      ],
+      "rationale": "实体消失。"
+    },
+    "0163_perspective-left_trimmed-siphon": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A10"
+      ],
+      "rationale": "不符合 prompt。"
+    },
+    "0164_perspective-center_trimmed-siphon": {
+      "status": "FAIL",
+      "patterns": [
+        "A10",
+        "A11"
+      ],
+      "rationale": "不符合 prompt。"
+    },
+    "0165_perspective-right_trimmed-siphon": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A02"
+      ],
+      "rationale": "玻璃罐在首帧已罩住火柴且全程静止，未呈现降低覆盖的动作。静止帧。"
+    },
+    "0166_perspective-left_trimmed-smiley-ball-rotates": {
+      "status": "FAIL",
+      "patterns": [
+        "A09"
+      ],
+      "rationale": "过程不连续，状态延续异常。"
+    },
+    "0167_perspective-center_trimmed-smiley-ball-rotates": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0168_perspective-right_trimmed-smiley-ball-rotates": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0169_perspective-left_trimmed-solid-ball-peakaboo": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A07"
+      ],
+      "rationale": "轨迹异常。"
+    },
+    "0170_perspective-center_trimmed-solid-ball-peakaboo": {
+      "status": "FAIL",
+      "patterns": [
+        "A07"
+      ],
+      "rationale": "轨迹异常。"
+    },
+    "0171_perspective-right_trimmed-solid-ball-peakaboo": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A06",
+        "A07",
+        "A08"
+      ],
+      "rationale": "编织篮／磁体结构变成不稳定的发光形体，关键装置身份与连续性丢失。"
+    },
+    "0172_perspective-left_trimmed-stable-blocks": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A09"
+      ],
+      "rationale": "违背 prompt。"
+    },
+    "0173_perspective-center_trimmed-stable-blocks": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A09"
+      ],
+      "rationale": "违背物理法则。"
+    },
+    "0174_perspective-right_trimmed-stable-blocks": {
+      "status": "FAIL",
+      "patterns": [
+        "A09"
+      ],
+      "rationale": "粉色积木被放上后又被移除，最终状态与 prompt 不符。"
+    },
+    "0175_perspective-left_trimmed-teapot-rotates": {
+      "status": "FAIL",
+      "patterns": [
+        "A04"
+      ],
+      "rationale": "茶壶以逆时针方向旋转。"
+    },
+    "0176_perspective-center_trimmed-teapot-rotates": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A07"
+      ],
+      "rationale": "轨迹异常，实体状态维持存在问题。"
+    },
+    "0177_perspective-right_trimmed-teapot-rotates": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A07"
+      ],
+      "rationale": "茶壶旋转方向与顺时针要求相反。实体维持。"
+    },
+    "0178_perspective-left_trimmed-two-balls-pass": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A04",
+        "A06"
+      ],
+      "rationale": "两球未清晰从相对管口发射，而是在画面中运动后消失。轨迹异常。"
+    },
+    "0179_perspective-center_trimmed-two-balls-pass": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A04",
+        "A07"
+      ],
+      "rationale": "两球未从管中高速直线滚出，移动后在桌面停下。轨迹异常，实体数量异常。"
+    },
+    "0180_perspective-right_trimmed-two-balls-pass": {
+      "status": "FAIL",
+      "patterns": [
+        "A02",
+        "A03",
+        "A04",
+        "A06",
+        "A07"
+      ],
+      "rationale": "视频开始时球已在运动，缺少从两侧管口同时滚出的动作语义。轨迹异常，实体数量异常。"
+    },
+    "0181_perspective-left_trimmed-unstable-block-stack": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A11"
+      ],
+      "rationale": "实体漂移。"
+    },
+    "0182_perspective-center_trimmed-unstable-block-stack": {
+      "status": "FAIL",
+      "patterns": [
+        "A07"
+      ],
+      "rationale": "实体漂移。"
+    },
+    "0183_perspective-right_trimmed-unstable-block-stack": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A07"
+      ],
+      "rationale": "动作不符合 prompt。"
+    },
+    "0184_perspective-left_trimmed-water-in-juice": {
+      "status": "FAIL",
+      "patterns": [
+        "A05",
+        "A11"
+      ],
+      "rationale": "违背 prompt。"
+    },
+    "0185_perspective-center_trimmed-water-in-juice": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违背物理法则。"
+    },
+    "0186_perspective-right_trimmed-water-in-juice": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "违背物理法则。"
+    },
+    "0187_perspective-left_trimmed-weight-on-ceramic": {
+      "status": "FAIL",
+      "patterns": [
+        "A03",
+        "A07",
+        "A09"
+      ],
+      "rationale": "壶铃没有被放稳在陶瓷杯上，而是被抬走。"
+    },
+    "0188_perspective-center_trimmed-weight-on-ceramic": {
+      "status": "FAIL",
+      "patterns": [
+        "A09",
+        "A03"
+      ],
+      "rationale": "壶铃短暂接近杯子后从场景移除，放置关系没有建立。"
+    },
+    "0189_perspective-right_trimmed-weight-on-ceramic": {
+      "status": "FAIL",
+      "patterns": [
+        "A09",
+        "A03"
+      ],
+      "rationale": "壶铃被移离杯口，没有停留在杯上。"
+    },
+    "0190_perspective-left_trimmed-weight-on-paper": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A08",
+        "A09"
+      ],
+      "rationale": "壶铃接触泡沫杯后侧翻，杯体与放置结果都未稳定保持。"
+    },
+    "0191_perspective-center_trimmed-weight-on-paper": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A09",
+        "A11"
+      ],
+      "rationale": "违背 prompt，物理定律。"
+    },
+    "0192_perspective-right_trimmed-weight-on-paper": {
+      "status": "FAIL",
+      "patterns": [
+        "A06",
+        "A09",
+        "A11"
+      ],
+      "rationale": "泡沫杯消失，只剩壶铃落在桌面，支撑关系被删除。"
+    },
+    "0193_perspective-left_trimmed-weight-on-pillow": {
+      "status": "FAIL",
+      "patterns": [
+        "A07",
+        "A09"
+      ],
+      "rationale": "渲染过程错误，背景异常。"
+    },
+    "0194_perspective-center_trimmed-weight-on-pillow": {
+      "status": "PASS",
+      "patterns": [],
+      "rationale": "未发现明显的 prompt 违背；动作、对象关系和结果在当前视频中保持一致。"
+    },
+    "0195_perspective-right_trimmed-weight-on-pillow": {
+      "status": "FAIL",
+      "patterns": [
+        "A11"
+      ],
+      "rationale": "部分不符合物理定律。"
+    },
+    "0196_perspective-left_trimmed-weight-protects-duck": {
+      "status": "FAIL",
+      "patterns": [
+        "A04"
+      ],
+      "rationale": "轨迹错误。"
+    },
+    "0197_perspective-center_trimmed-weight-protects-duck": {
+      "status": "FAIL",
+      "patterns": [
+        "A04",
+        "A05"
+      ],
+      "rationale": "轨迹错误。"
+    },
+    "0198_perspective-right_trimmed-weight-protects-duck": {
+      "status": "FAIL",
+      "patterns": [
+        "A01",
+        "A02",
+        "A04"
+      ],
+      "rationale": "轨迹错误，初始状态异常。"
+    }
+  }
+}
